@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('Pic/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game {
+    width: 1000px;
+    height: 400px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10%;
+    background-image: url('Pic/wallpaper1.png');
+    background-repeat: repeat-x;
+    background-size: 2222px 400px;
+    background-position-y: -0;
+}
+
+#start {
+    padding-top: 10%;
+}
+
+#container {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-image: linear-gradient(to top left, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    overflow: hidden;
+}
+
+#character {
+    width: 40px;
+    height: 100px;
+    background-image: url('Pic/char.png');
+    background-repeat: no-repeat;
+    background-size: 40px 100px;
+    position: relative;
+    top: 298px;
+    left: 100px;
+    border-image: linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    border-right: 4px solid;
+}
+
+.animate {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 298px;
+    }
+    20% {
+        top: 260px;
+    }
+    80% {
+        top: 260px;
+    }
+    100% {
+        top: 298px;
+    }
+}
+
+#block1 {
+    background-image: url('Pic/angel1.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 258px;
+    left: 1000px;
+    border-image: linear-gradient(to bottom right, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+@keyframes block {
+    0% {
+        left: 1000px
+    }
+    100% {
+        left: -40px
+    }
+}
+
+p {
+    text-align: center;
+}
+
+#scoreSpan {
+    background-color: whitesmoke;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-image: linear-gradient(to top left, violet, indigo, blue, green, yellow, orange, red);
+    border-image-slice: 1;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    visibility: hidden;
+}

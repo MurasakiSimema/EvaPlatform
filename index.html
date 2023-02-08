@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-
+    <!--<link rel="stylesheet" href="./twitter-bootstrap/css/bootstrap.min.css">
+    <script src="twitter-bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="twitter-bootstrap/js/bootstrap.min.js"></script>-->
+    <title>Evangelion Jump</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body" onkeydown="jump()">
+    <div id="start" class="container text-centre">
+        <div id="container">
+            <br>
+            <p>Corri sull'EVA01 per più tempo possibile senza che il tuo AT-Field si scontri con gli angeli, se ne vedi uno salta premendo Spazio</p>
+            <br><br>
+            <label>Difficoltà:</label>
+            <button class="btn btn-success" onclick="Gen(1)">Facile</button>
+            <button class="btn btn-primary" onclick="Gen(1.5)">Medio</button>
+            <button class="btn btn-danger" onclick="Gen(2)">Difficile</button>
+            <label>Codice Speciale:</label>
+            <input type="text" id="pass" name="pass">
+        </div>
+    </div>
+    <div id="game">
+        <div></div>
+        <div></div>
+    </div>
+    <p><span id="scoreSpan"></span></p>
+
+    <script src="JS/script.js"></script>
+    <!--
+        Codici per Easter Egg:
+        Anima
+        Rebuild
+        Rei
+        Asuka
+        Kaworu
+        Thanatos
+    -->
+</body>
+
+</html>
